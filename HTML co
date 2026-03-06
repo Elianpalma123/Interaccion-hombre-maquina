@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafetería Aroma</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Café Aroma</h2>
+
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Misión</a></li>
+<li><a href="#">Testimonios</a></li>
+<li><a href="#">Historia</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+
+</nav>
+</header>
+
+
+<section>
+<h1>El mejor café de la ciudad</h1>
+<p>Disfruta del aroma y sabor de nuestro café artesanal.</p>
+<button>Ver menú</button>
+</section>
+
+
+<section>
+
+<h2>Nuestros servicios</h2>
+
+<div>
+
+<article>
+<h3>Café artesanal</h3>
+<p>Granos seleccionados y tostados con cuidado.</p>
+</article>
+
+<article>
+<h3>Ambiente acogedor</h3>
+<p>Un lugar perfecto para compartir.</p>
+</article>
+
+<article>
+<h3>Postres caseros</h3>
+<p>Deliciosos acompañamientos para tu café.</p>
+</article>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Nuestra misión</h2>
+
+<p>
+Ofrecer café de alta calidad mientras creamos un espacio donde las
+personas puedan relajarse y disfrutar momentos especiales.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Testimonios</h2>
+
+<div>
+
+<article>
+<p>"El mejor café que he probado."</p>
+<h4>- Laura</h4>
+</article>
+
+<article>
+<p>"Un lugar muy acogedor."</p>
+<h4>- Andrés</h4>
+</article>
+
+<article>
+<p>"Excelente ambiente y servicio."</p>
+<h4>- Camila</h4>
+</article>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Nuestra historia</h2>
+
+<p>
+Nuestra cafetería nació con la pasión por el café colombiano y el deseo
+de crear un espacio cálido para compartir con amigos y familia.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Visítanos</h2>
+
+<div>
+
+<input type="radio" name="slider" id="img1" checked>
+<input type="radio" name="slider" id="img2">
+<input type="radio" name="slider" id="img3">
+
+<div>
+
+<img src="img/cafe1.jpg">
+<img src="img/cafe2.jpg">
+<img src="img/cafe3.jpg">
+
+</div>
+
+<div>
+<label for="img1"></label>
+<label for="img2"></label>
+<label for="img3"></label>
+</div>
+
+</div>
+
+<p>Síguenos en redes sociales</p>
+
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="#">TikTok</a>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Café Aroma</p>
+
+</footer>
+
+</body>
+</html>
