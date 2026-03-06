@@ -1,0 +1,139 @@
+.navbar{
+    display: flex;
+    align-items:center;
+    padding:20px;
+    background:#3e2723;
+    color:white;
+}
+.navbar img{
+    width: 90px;
+}
+.navbar h2{
+    margin-left: 20px;
+}
+.navbar input{
+    justify-content: end;
+    margin-left: 20px;
+}
+
+.menu{
+display:flex;
+gap:20px;
+list-style:none;
+margin-left: auto;
+}
+
+.inicio {
+    display: flex;
+    background-color: #794419;
+    color: white;
+}
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;   
+    align-items: center;         
+          
+    padding: 40px;
+}
+.Servicios {
+    background-color: #a349003a;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.historia {
+    display: flex;
+    background-color: #7e391e;
+    color: white;
+}
+.historia img{
+    width: 35%;
+    padding: 50px;
+}
+.historia h2{
+    justify-content: center;
+}
+.frases {
+    width: 50%;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;   
+    align-items: center;         
+          
+    padding: 40px;
+}
+.cards {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #812f0036;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    background-color: #a3490077;
+    padding: 20px;
+    width: 256px;
+}
+
+.mision{
+    display: flex;
+    background-color: #7e391e;
+    color: white;
+}
+.mision img{
+    width: 40%;
+    padding: 50px;
+}
+
+.mastexto {
+    width: 50%;
+    display: flex;  
+    flex-direction: column; 
+    justify-content: center;   
+    align-items: center;         
+          
+    padding: 40px;
+}
+
+.Compra{
+    background-color: #a349003a;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.cards2 {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #794419;
+    color: white;
+}
+
+.cards-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card2 {
+    background-color: #52322c;
+    padding: 20px;
+    width: 256px;
+}
+.card2 img{
+    width: 180px;
+}
+
+footer {
+    padding: 5px;
+    background-color:#3e2723;
+    color: white;
+    text-align: center;
+}
+
