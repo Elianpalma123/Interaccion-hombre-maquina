@@ -3,7 +3,7 @@
     padding:0;
 }
 
-body{
+.body{
     background:#ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -749,3 +749,4 @@ hr{
 
 
 }
+
