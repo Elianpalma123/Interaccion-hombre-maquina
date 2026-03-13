@@ -1,0 +1,743 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#ffffff;
+}
+
+.cosita-arriba{
+    display:flex;
+    justify-content:space-between;
+
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    padding:10px 38px;
+}
+
+.cosita-arriba a{
+
+    color:  rgb(255, 255, 255);
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 40px;
+    background:rgb(255, 255, 255);
+}
+
+.menu img{
+    height:70px;
+}
+
+.menu ul{
+    display:flex;
+    gap:30px;
+    list-style: none;
+}
+
+.menu li{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.emojis{
+    display:flex;
+    gap:15px;
+    font-size:18px;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:#b9b7b7;
+    margin:0 40px;
+}
+
+.titulo{
+    text-align:center;
+    padding:40px;
+}
+
+.titulo h1{
+    font-size:50px;
+    letter-spacing:3px;
+}
+
+.titulo p{
+    margin-top:10px;
+    color:#000000;
+}
+
+.linea{
+    width:40px;
+    height:3px;
+    background:#ffd000;
+    margin: 15px auto;
+}
+
+.contenido{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    padding:40px 80px;
+    align-items:start;
+}
+
+.principal{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.principal img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.categoria{
+    margin-top:5px;
+    font-size:12px;
+    letter-spacing:2px;
+    color:#7d7d7d;
+}
+
+.principal h2{
+    margin-top:5px;
+    font-size:24px;
+    line-height:1.3;
+}
+
+.lado{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.articulo img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.articulo h3{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.leer{
+    margin-top:10px;
+    font-size:12px;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.articulo-grande{
+    margin-top:20px;
+}
+
+.articulo-grande img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.articulo-grande h2{
+    margin-top:10px;
+    font-size:22px;
+    line-height:1.3;
+}
+
+.historias{
+    padding:40px 80px;
+    background:rgb(255, 255, 255);
+    text-align:center;
+}
+
+.historias h2{
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.contenedor-historias{
+    display:flex;
+    gap:30px;
+    margin-top:30px;
+}
+
+.card-historia{
+    flex:1;
+    text-align:left;
+}
+
+.card-historia img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.titulo-historia{
+    font-size:14px;
+    font-weight:bold;
+    margin-top:5px;
+    line-height:1.4;
+}
+
+.astronomia{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding:60px 80px;
+    text-align:center;
+}
+
+.astronomia h2{
+    letter-spacing:3px;
+}
+
+.imagen-astronomia{
+    position:relative;
+    margin-top:40px;
+}
+
+.imagen-astronomia img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+.texto-astronomia{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    text-align:left;
+    max-width:600px;
+}
+
+.texto-astronomia h2{
+    font-size:28px;
+    line-height:1.3;
+    margin-top:10px;
+}
+
+.texto-astronomia .leer{
+    margin-top:10px;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.naturaleza{
+    padding:60px 80px;
+    background:#f2f2f2;
+    text-align:center;
+}
+
+.naturaleza h2{
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.grid-naturaleza{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    margin-top:40px;
+    text-align:left;
+}
+
+.articulo-grande-nat img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.articulo-grande-nat h3{
+    font-size:18px;
+    margin-top:10px;
+    line-height:1.4;
+}
+
+.lado-naturaleza{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.articulo-nat img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+
+.articulo-nat h4{
+    font-size:15px;
+    margin-top:10px;
+    line-height:1.4;
+}
+
+.articulo-abajo{
+    grid-column:1/2;
+    margin-top:20px;
+}
+
+.articulo-abajo img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.articulo-abajo h3{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.explora{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding:60px 80px;
+}
+
+.explora h2{
+    text-align:center;
+    font-size:36px;
+    letter-spacing:4px;
+    margin-bottom:40px;
+}
+
+.explora-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:30px;
+    margin-bottom:40px;
+}
+
+.explora-grande{
+    position:relative;
+}
+
+.explora-grande img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.texto-explora{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    max-width:500px;
+}
+
+.texto-explora h3{
+    font-size:20px;
+    line-height:1.4;
+    margin-top:10px;
+}
+
+.explora-lado{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    padding-bottom:10px;
+}
+
+.explora-lado img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.explora-lado h4{
+    padding:10px;
+    font-size:16px;
+}
+
+.explora-lado .categoria{
+    padding-left:10px;
+}
+
+.explora-lado .leer{
+    padding-left:10px;
+}
+
+.explora-tarjetas{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.card-explora{
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}
+
+.card-explora img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.card-explora h4{
+    padding:10px;
+    font-size:15px;
+}
+
+.card-explora .categoria{
+    padding-left:10px;
+}
+
+.card-explora .leer{
+    padding-left:10px;
+}
+
+.boton-explora{
+    text-align:center;
+    margin-top:30px;
+}
+
+.boton-explora button{
+    background:#ffd000;
+    border:none;
+    padding:12px 25px;
+    font-weight:bold;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.mas-noticias{
+    padding:60px 80px;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.mas-noticias h2{
+    letter-spacing:3px;
+}
+
+.noticias-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    margin-top:40px;
+    text-align:left;
+}
+
+.noticia img{
+    width:100%;
+    object-fit:cover;
+}
+
+.grande img{
+    height:320px;
+}
+
+.noticia h3{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.noticia h4{
+    margin-top:10px;
+    font-size:16px;
+    line-height:1.4;
+}
+
+.noticias-lado{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.disney{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding:60px 80px;
+    text-align:center;
+}
+
+.disney h2{
+    letter-spacing:3px;
+}
+
+.disney-banner{
+    position:relative;
+    margin-top:40px;
+}
+
+.disney-banner img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+}
+
+.texto-banner{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    max-width:600px;
+    text-align:left;
+}
+
+.texto-banner h3{
+    font-size:26px;
+    margin-top:10px;
+    line-height:1.3;
+}
+
+.entrevistas{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding:60px 80px;
+    text-align:center;
+}
+
+.entrevistas-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    margin-top:40px;
+    align-items:center;
+    text-align:left;
+}
+
+.entrevista-img img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.entrevista-texto h3{
+    margin-top:10px;
+    font-size:20px;
+    line-height:1.4;
+}
+
+.entrevista-texto p{
+    margin-top:10px;
+    color:#cbcbcb;
+    font-size:14px;
+}
+
+.disney-articulos{
+    margin-top:60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px 40px;
+    align-items:center;
+}
+
+.disney-img img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.disney-texto h3{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.disney-texto p{
+    margin-top:10px;
+    color:#c1c1c1;
+    font-size:14px;
+}
+
+.descubre{
+    background:#f2f2f2;
+    padding:60px 80px;
+    text-align:center;
+}
+
+.descubre h2{
+    letter-spacing:3px;
+}
+
+.descubre-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    margin-top:40px;
+    text-align:left;
+}
+
+.video-principal img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.video-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+.video-principal h3{
+    margin-top:10px;
+    font-size:22px;
+}
+
+.video-card h4{
+    margin-top:10px;
+    font-size:16px;
+}
+
+.videos-lado{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.descripcion{
+    margin-top:8px;
+    color:#474747;
+    font-size:14px;
+}
+
+
+.footer{
+    background:black;
+    color:white;
+    padding:60px 80px 30px;
+}
+
+.footer-contenedor{
+    display:flex;
+    gap:60px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+}
+
+.footer-columnas{
+    flex:1;
+    min-width:180px;
+}
+
+.footer-columnas h4{
+    margin-bottom:20px;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.footer-columnas ul{
+    list-style:none;
+}
+
+.footer-columnas li{
+    margin-bottom:10px;
+    font-size:14px;
+    color:#cecece;
+    cursor:pointer;
+}
+
+.redes{
+    display:flex;
+    gap:15px;
+}
+
+.footer-condiciones{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding-top:20px;
+    font-size:13px;
+    color:#d0d0d0;
+    flex-wrap:wrap;
+}
+
+.footer-nombres{
+    text-align:center;
+    margin-top:20px;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+@media (max-width:1024px){
+
+.contenido{
+    grid-template-columns:1fr;
+    padding:40px;
+}
+
+.grid-naturaleza{
+    grid-template-columns:1fr;
+}
+
+.explora-grid{
+    grid-template-columns:1fr;
+}
+
+.explora-tarjetas{
+    grid-template-columns:1fr 1fr;
+}
+
+.noticias-grid{
+    grid-template-columns:1fr;
+}
+
+.entrevistas-grid{
+    grid-template-columns:1fr;
+}
+
+.disney-articulos{
+    grid-template-columns:1fr;
+}
+
+.descubre-grid{
+    grid-template-columns:1fr;
+}
+
+.contenedor-historias{
+    flex-wrap:wrap;
+}
+
+.card-historia{
+    flex:1 1 45%;
+}
+
+.menu ul{
+    gap:15px;
+}
+
+}
+
+
+@media (max-width:768px){
+
+.menu{
+    flex-direction:column;
+    align-items:center;
+}
+
+.menu ul{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.explora-tarjetas{
+    grid-template-columns:1fr;
+}
+
+.card-historia{
+    flex:1 1 100%;
+}
+
+.texto-astronomia{
+    left:10px;
+    right:10px;
+}
+
+.texto-banner{
+    left:10px;
+    right:10px;
+}
+
+}
