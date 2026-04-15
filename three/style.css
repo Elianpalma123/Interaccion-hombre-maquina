@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+      width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+    color: aliceblue;
+}
+
+
+.hero canvas {
+  position: fixed;   
+  top: 0;  left: 0;
+  width: 100%;  height: 100%;
+  z-index: -1; 
+  pointer-events: none;
+}
+.about {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+.about-info {
+    width: 50vw;
+}
+
+.about-canvas{
+    width: 40vw;
+    height: 50vh;
+}
+.hero{
+    height: 100vh;
+}
+
+
