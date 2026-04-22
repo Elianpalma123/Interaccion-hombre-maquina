@@ -1,0 +1,326 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.body{
+    background:#ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.cosita-arriba{
+    display:flex;
+    justify-content:space-between;
+
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+    padding:10px 38px;
+
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+.cosita-arriba a{
+
+    color:  rgb(255, 255, 255);
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:4px 40px;
+    background:white;
+}
+
+.menu img{
+    height:70px;
+}
+
+.menu ul{
+    display:flex;
+    gap:30px;
+    list-style: none;
+}
+
+.menu li{
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.emojis{
+    display:flex;
+    gap:15px;
+    font-size:18px;
+}
+
+.hr{
+    border:none;
+    height:1px;
+    background:#b9b7b7;
+    margin:0 10px;
+}
+
+.titulo{
+    text-align:center;
+    padding:40px;
+}
+
+.titulo h1{
+    font-size:52px;
+    letter-spacing:5px;
+    font-weight:700;
+}
+
+.titulo p{
+    margin-top:10px;
+    color:#000000;
+}
+
+.linea{
+    width:40px;
+    height:3px;
+    background:#ffd000;
+    margin: 15px auto;
+}
+
+.contenido{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+    padding:40px 80px;
+    align-items:start;
+}
+
+.principal{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.cabaio {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+/* CANVAS */
+.cabaio canvas {
+    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    display: block; 
+}
+
+.categoria{
+    margin-top:5px;
+    font-size:12px;
+    letter-spacing:2px;
+    color:#7d7d7d;
+}
+
+.principal h2{
+    margin-top:5px;
+    font-size:24px;
+    line-height:1.3;
+}
+
+.lado{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.articulo img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+.articulo h3{
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.leer{
+    margin-top:10px;
+    font-size:12px;
+    letter-spacing:2px;
+    cursor:pointer;
+}
+
+.articulo-grande{
+    margin-top:20px;
+}
+
+.articulo-grande img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.articulo-grande h2{
+    margin-top:10px;
+    font-size:22px;
+    line-height:1.3;
+}
+.adn {
+  width: 100%;
+  height: 400px; 
+  position: relative;
+
+}
+.historias{
+    padding:40px 80px;
+    background:rgb(255, 255, 255);
+    text-align:center;
+}
+
+.historias h2{
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.historias {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.historias h2 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.linea {
+    width: 60px;
+    height: 4px;
+    background-color: #fcd116;
+    margin: 10px auto 40px auto;
+}
+
+#historiasCarousel {
+    max-width: 900px;
+    margin: auto;
+}
+
+.card-historia {
+    padding: 10px;
+}
+
+.card-historia img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.categoria {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.titulo-historia {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); 
+}
+
+.card-historia:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.astronomia{
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding:60px 80px;
+    text-align:center;
+}
+
+.astronomia h2{
+    letter-spacing:3px;
+}
+
+.imagen-astronomia{
+    position:relative;
+    margin-top:40px;
+}
+
+
+.texto-astronomia{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+    text-align:left;
+    max-width:600px;
+}
+
+.texto-astronomia h2{
+    font-size:28px;
+    line-height:1.3;
+    margin-top:10px;
+}
+
+.texto-astronomia .leer{
+    margin-top:10px;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+
+.escena{
+    width: 90vw;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+    color: aliceblue;
+}
+
+
+.escena canvas {
+  position: absolute; 
+  width: 100%;  
+  height: 100%;
+  z-index: 0; 
+}
+.hero h1{
+    font-size: 4em;
+    z-index: 1;
+}
+.about {
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+.about-info {
+    width: 50vw;
+}
+
+.about-canvas{
+    width: 40vw;
+    height: 50vh;
+}
