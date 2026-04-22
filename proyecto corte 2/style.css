@@ -1,12 +1,13 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 .body{
     background:#ffffff;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    
 }
 
 .cosita-arriba{
@@ -32,6 +33,7 @@
     justify-content:space-between;
     padding:4px 40px;
     background:white;
+    flex-wrap: wrap;
 }
 
 .menu img{
@@ -93,6 +95,14 @@
     padding:40px 80px;
     align-items:start;
 }
+.contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 20px 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .principal{
     display:flex;
@@ -106,7 +116,6 @@
     position: relative;
 }
 
-/* CANVAS */
 .cabaio canvas {
     position: absolute;
     width: 100% ;
@@ -298,29 +307,73 @@
   height: 100%;
   z-index: 0; 
 }
-.hero h1{
-    font-size: 4em;
-    z-index: 1;
-}
-.about {
-    width: 100vw;
-    height: 50vh;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
-
+.cabaio {
+    width: 100%;
+    position: relative;
 }
 
-.about-info {
-    width: 50vw;
+
+.adn {
+    width: 100%;
+    position: relative;
 }
 
-.about-canvas{
-    width: 40vw;
-    height: 50vh;
+.cabaio { height: 500px; }
+.adn { height: 350px; }
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+}
+
+
+@media (max-width: 992px) {
+    .contenido {
+        flex-direction: column;
+    }
+    
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-info, .about-canvas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cosita-arriba {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .texto-astronomia {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    
+    .cabaio { height: 350px; }
+    
+    .escena h1 {
+        font-size: 2.5em;
+    }
 }
