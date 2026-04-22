@@ -24,8 +24,8 @@ const geometry0 = new THREE.SphereGeometry( 2, 32, 16 );
 const geometry1 = new THREE.SphereGeometry( 2, 32, 16 );
 
 
-const material0 = new THREE.MeshBasicMaterial( { color: 0xFFD000 } );
-const material1 = new THREE.MeshBasicMaterial( { color: 0xA11500} );
+const material0 = new THREE.MeshBasicMaterial( { color: 0xffff00} );
+const material1 = new THREE.MeshBasicMaterial( { color: 0xffff00} );
 
 const sol = new THREE.Mesh( geometry0, material0 );
 const planeta = new THREE.Mesh(geometry1, material1);
@@ -39,22 +39,7 @@ camera.position.z = 15;
 
 
 
-//scroll
 
-
-addEventListener("click", (event) => 
-{
-  alert ("Cube clicked!");
-  
-  const randomColor = Math.random() * 0xffffff;
-
-  sol.material.color.set(randomColor);
-
-  const randomColor2 = Math.random() * 0xffffff;
-
-  planeta.material.color.set(randomColor2);
-
-})
 
 function animate( time ) {
 
