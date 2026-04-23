@@ -38,7 +38,19 @@ scene.add(planeta);
 camera.position.z = 15;
 
 
+addEventListener("click", (event) => 
+{
+  alert ("Cube clicked!");
+  
+  const randomColor = Math.random() * 0xffffff;
 
+  sol.material.color.set(randomColor);
+
+  const randomColor2 = Math.random() * 0xffffff;
+
+  planeta.material.color.set(randomColor2);
+
+})
 
 
 function animate( time ) {
