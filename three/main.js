@@ -49,6 +49,21 @@ addEventListener('scroll', () =>
   Valuescroll = window.scrollY;
   console.log(Valuescroll);
 })
+
+addEventListener("click", (event) => 
+{
+  alert ("Cube clicked!");
+  
+  const randomColor = Math.random() * 0xffffff;
+
+  sol.material.color.set(randomColor);
+
+  const randomColor2 = Math.random() * 0xffffff;
+
+  planeta.material.color.set(randomColor2);
+
+})
+
 function animate( time ) {
 
 //  Figura1.rotation.x = time / 2000;
