@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+  <div class="navbar-container">
+
+    <div class="logo">Billie Eilish</div>
+
+    <ul class="nav-links">
+      <li class="active">Home</li>
+      <li>fotos</li>
+      <li>contacto</li>
+    </ul>
+
+    <form class="nav-form">
+      <input type="text" placeholder="Search">
+      <button type="submit">Subir</button>
+    </form>
+
+  </div>
+</nav>
+
+<h1 class="titulo">Billie Eilish</h1>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.ZsFnjcg5ttTLWLcw7NygewHaFC?rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://wallpapers.com/images/hd/billie-eilish-pictures-527j26qhl5eiwtki.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+            <img src="https://i.pinimg.com/736x/fd/7b/0c/fd7b0ccbd50293e783cb7ff321d79add.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="cards-container">
+        <article class="card">
+        <img src="https://img.pop-music.cz/lyrics/albums/2000/billie-eilish-when-we-all-fall-asleep-where-do-we-go.jpg"
+            alt="Imagen 1" class="card__image">
+        <div class="card__content">
+            <h2 class="card__title">WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</h2>
+            <p class="card__text">Álbum debut de Billie Eilish con un estilo oscuro y único. Incluye canciones como "bad guy" y la lanzó al éxito mundial. </p>
+            <button class="card__button">Ver más</button>
+        </div>
+        </article>
+        <article class="card">
+        <img src="https://i1.sndcdn.com/artworks-000380551776-ubm811-t500x500.jpg"
+            alt="Imagen 2" class="card__image">
+        <div class="card__content">
+            <h2 class="card__title">dont smile at me</h2>
+            <p class="card__text">Su primer EP, donde comenzó su carrera. Tiene un sonido alternativo y letras personales que la hicieron destacar.</p>
+            <button class="card__button">Ver más</button>
+        </div>
+        </article>
+        <article class="card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.h4TclZUmZMTeJk42va0B2AHaHa?w=640&h=640&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Imagen 3" class="card__image">
+        <div class="card__content">
+            <h2 class="card__title"> HIT ME HARD AND SOFT</h2>
+            <p class="card__text">Un álbum más reciente con un sonido más emocional, mostrando una nueva etapa en su música.</p>
+            <button class="card__button">Ver más</button>
+        </div>
+        </article>
+    </section>
+
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>¿Quién es Billie Eilish?</strong>
+        Billie Eilish es una cantante y compositora estadounidense conocida por su estilo único, su voz suave y sus letras profundas. Se hizo famosa a muy corta edad con su música alternativa.
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Estilo musical</strong>
+        Su música mezcla pop, electrónica y sonidos oscuros. Billie se destaca por crear canciones diferentes a lo comercial, con una estética muy personal.
+
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Éxito y premios</strong>
+        Ha ganado múltiples premios, incluyendo Grammys. Es una de las artistas más influyentes de su generación y ha marcado tendencia en la música actual.
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
