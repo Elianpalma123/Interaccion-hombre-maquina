@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    background:black;
+}
+
+canvas{
+    display:block;
+}
+
+.puntero{
+    position:fixed;
+    top:50%;
+    left:50%;
+    color:white;
+    font-size:30px;
+}
+
+.puntos{
+    position:fixed;
+    top:20px;
+    left:20px;
+    color:white;
+    font-size:24px;
+    z-index:10;
+}
+
+.info{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    color:white;
+    font-size:20px;
+}
