@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>To Do List</title>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <div id="app">
+
+        <h1>To Do List</h1>
+
+        <input
+            type="text"
+            v-model="nuevaTarea"
+        >
+
+        <button v-on:click="agregarTarea">
+            Agregar
+        </button>
+
+        <ul>
+
+            <li v-for="(tarea, index) in tareas">
+
+                {{ tarea }}
+
+                <button v-on:click="eliminarTarea(index)">
+                    Eliminar
+                </button>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
