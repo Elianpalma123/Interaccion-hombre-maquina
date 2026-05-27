@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial tienda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <section class="menu">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSolB-dPacK5dvCCAd_4-yZr9aHV12ihnZPjA&s" alt="Logo">
+        
+        <ul>
+            <li>INICIO</li>
+            <li>PRODUCTOS</li>
+            <li>CONTACTOS</li>
+            <li>TIENDA</li>
+        </ul>
+
+        <div class="buscar">
+            <p>Buscar</p>
+            <p>|||</p>
+        </div>
+    </section>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p>Inicio > Tienda</p>
+
+            <h1>Tienda</h1>
+
+            <h3>El carro de lujo que siempre imaginaste</h3>
+
+        </div>
+
+    </section>
+
+    <section class="filters">
+
+        <div class="filter-box">
+
+            <label>Categorías</label>
+
+            <select>
+                <option>Sala</option>
+                <option>Habitación</option>
+                <option>Cocina</option>
+            </select>
+
+        </div>
+
+        <div class="filter-box">
+
+            <label>Precio</label>
+
+            <select>
+                <option>Todos</option>
+                <option>$0 - $50</option>
+                <option>$50 - $100</option>
+            </select>
+
+        </div>
+
+    </section>
+
+    <section class="productos">
+
+        <div class="producto">
+
+            <div class="producto-image">
+                <img src="https://img.magnific.com/foto-gratis/coche-3d-fondo-simple_23-2150796882.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+
+            <div class="producto-info">
+
+                <h3>Super 3000 car</h3>
+
+                <p class="precio">$7.000</p>
+
+                <p class="text">
+                    Un estilo clasico y elegante
+                </p>
+
+                <button>Añadir al carro</button>
+
+            </div>
+
+        </div>
+
+        <div class="producto">
+
+            <div class="producto-image">
+                <img src="https://st.depositphotos.com/1002254/1330/v/450/depositphotos_13300958-stock-illustration-orange-muscle-car.jpg">
+            </div>
+
+            <div class="producto-info">
+
+                <h3>Storm 5000</h3>
+
+                <p class="precio">$8.000</p>
+
+                <p class="text">
+                    El carro de toreto
+                </p>
+
+                <button>Añadir al carrito</button>
+
+            </div>
+
+        </div>
+
+        <div class="producto">
+
+            <div class="producto-image">
+                <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2019/11/Portada-21.jpg">
+            </div>
+
+            <div class="producto-info">
+
+                <h3>Transformer</h3>
+
+                <p class="precio">$9.000</p>
+
+                <p class="text">
+                    Estilo moderno 
+                </p>
+
+                <button>Añadir al carrito</button>
+
+            </div>
+
+        </div>
+
+        <div class="producto">
+
+            <div class="producto-image">
+                <img src="https://image.slidesdocs.com/responsive-images/background/white-backdrop-featuring-a-3d-rendering-of-a-vibrant-yellow-high-performance-sports-car-powerpoint-background_ce75bf3cb9__960_540.jpg">
+            </div>
+
+            <div class="producto-info">
+
+                <h3>Sky 720</h3>
+
+                <p class="precio">$10.000</p>
+
+                <p class="text">
+                    El carro más raído de todos
+                </p>
+
+                <button>Añadir al carro</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="app">
+
+        <h1>LISTA DE COMPRA</h1>
+
+        <input
+            type="text"
+            v-model="nuevaTarea"
+        >
+
+        <button v-on:click="agregarTarea">
+            Agregar
+        </button>
+
+        <ul>
+
+            <li v-for="(tarea, index) in tareas">
+
+                {{ tarea }}
+
+                <button v-on:click="eliminarTarea(index)">
+                    Eliminar
+                </button>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+
+    <section class="socio">
+
+        <h2>Únete como socio</h2>
+
+        <p>Recibe promociones y productos nuevos</p>
+
+        <form>
+
+            <input type="email" placeholder="Correo electrónico">
+
+            <button>Enviar</button>
+
+        </form>
+
+    </section>
+
+    
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <h2>CARS</h2>
+
+            <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Tienda</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+            </nav>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>Elian Palma</p>
+
+            <div class="socials">
+                <span>Cel</span>
+                <span>Correo</span>
+                <span>Tel</span>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
