@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>To Do List</title>
+
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+
+        <h1>Lista De Tareas</h1>
+
+        <div class="input-container">
+
+            <input
+                type="text"
+                v-model="nuevaTarea"
+                @keyup.enter="agregarTarea"
+                placeholder="Nueva tarea..."
+            >
+
+            <button @click="agregarTarea">
+                Agregar
+            </button>
+
+        </div>
+
+        <ul>
+
+            <li
+                v-for="(tarea, index) in tareas"
+                :key="index"
+                :class="{ completada: tarea.completada }"
+            >
+
+                <span>
+                    {{ tarea.texto }}
+                </span>
+
+                <div class="botones">
+
+                    <button
+                        class="estado"
+                        :class="{ activo: tarea.completada }"
+                        @click="toggleTarea(index)"
+                    >
+                        {{ tarea.completada ? 'Realizada' : 'Por hacer' }}
+                    </button>
+
+                    <button
+                        class="eliminar"
+                        @click="eliminarTarea(index)"
+                    >
+                        Eliminar
+                    </button>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
